@@ -6,15 +6,15 @@
 ------------------------------ */
 
 :root {
-  --bg: #f7f5ef;
+  --bg: #fbfaf7;
   --text: #111111;
   --muted: #72716d;
-  --line: #191919;
+  --line: #d8d6d0;
 
-  --lavender: #dcd8ff;
-  --blue: #cee5ee;
-  --peach: #ffd8ca;
-  --yellow: #f2e593;
+  --lavender: #e9e5ff;
+  --blue: #dceef3;
+  --peach: #ffe5dc;
+  --yellow: #f6efbd;
 
   --max-width: 1320px;
 }
@@ -76,7 +76,6 @@ p {
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 1px solid var(--line);
 }
 
 
@@ -137,11 +136,11 @@ nav a:hover {
 
   max-width: 1050px;
 
-  font-size: clamp(4.5rem, 10vw, 9rem);
-  font-weight: 800;
+  font-size: clamp(3.7rem, 8vw, 7.3rem);
+  font-weight: 700;
 
   line-height: 0.98;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.055em;
 }
 
 
@@ -197,7 +196,6 @@ nav a:hover {
 
   background: var(--lavender);
 
-  border-right: 1px solid var(--line);
 }
 
 
@@ -235,7 +233,7 @@ nav a:hover {
   margin: 45px 0 28px;
 
   font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 750;
+  font-weight: 650;
 
   line-height: 1.05;
   letter-spacing: -0.055em;
@@ -260,7 +258,6 @@ nav a:hover {
   font-size: 0.9rem;
   font-weight: 650;
 
-  border-bottom: 1px solid var(--text);
 }
 
 
@@ -289,7 +286,7 @@ nav a:hover {
   margin: 0;
 
   font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 750;
+  font-weight: 650;
 
   letter-spacing: -0.055em;
 }
@@ -323,7 +320,6 @@ nav a:hover {
   gap: 24px;
   align-items: center;
 
-  border-bottom: 1px solid var(--line);
 
   transition:
     padding 0.2s ease,
@@ -392,8 +388,6 @@ nav a:hover {
 
 .work-card {
   background: var(--blue);
-
-  border-right: 1px solid var(--line);
 }
 
 
@@ -406,7 +400,7 @@ nav a:hover {
   margin: 58px 0 32px;
 
   font-size: clamp(3rem, 5.5vw, 5.7rem);
-  font-weight: 750;
+  font-weight: 650;
 
   line-height: 1.03;
   letter-spacing: -0.065em;
@@ -460,7 +454,6 @@ nav a:hover {
   gap: 30px;
   align-items: baseline;
 
-  border-bottom: 1px solid var(--line);
 }
 
 
@@ -501,7 +494,6 @@ nav a:hover {
 
   background: var(--yellow);
 
-  border-right: 1px solid var(--line);
 }
 
 
@@ -534,7 +526,6 @@ nav a:hover {
 .now-block dl div {
   padding: 19px 0;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 
@@ -644,7 +635,6 @@ footer {
     min-height: 370px;
 
     border-right: 0;
-    border-bottom: 1px solid var(--line);
   }
 
 
@@ -657,8 +647,9 @@ footer {
   .timeline,
   .duo,
   .about-now {
-    margin-top: 75px;
-    margin-bottom: 75px;
+     border: 0;
+     gap: 16px;
+     background: transparent;
   }
 
 
@@ -693,7 +684,6 @@ footer {
 
   .work-card {
     border-right: 0;
-    border-bottom: 1px solid var(--line);
   }
 
 
@@ -718,7 +708,6 @@ footer {
     padding: 38px 28px 46px;
 
     border-right: 0;
-    border-bottom: 1px solid var(--line);
   }
 
 
