@@ -110,61 +110,58 @@ nav a:hover {
    HERO
 ------------------------------ */
 
-.hero {
+.intro {
   width: min(calc(100% - 64px), var(--max-width));
-  min-height: 650px;
-
   margin: auto;
-  padding: 58px 0 48px;
 
-  display: flex;
-  flex-direction: column;
+  padding: 64px 0 72px;
+
+  border-bottom: 1px solid var(--line);
 }
 
+.intro-label {
+  margin-bottom: 30px;
 
-.hero-label,
-.eyebrow {
+  color: var(--muted);
   font-size: 0.7rem;
-  font-weight: 700;
-
-  letter-spacing: 0.15em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
+.intro-text {
+  max-width: 680px;
 
-.hero h1 {
-  margin: 70px 0 60px;
-
-  max-width: 1050px;
-
-  font-size: clamp(3.7rem, 8vw, 7.3rem);
-  font-weight: 700;
-
-  line-height: 0.98;
-  letter-spacing: -0.055em;
-}
-
-
-.hero-bottom {
-  margin-top: auto;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-
-.hero-bottom p {
-  font-size: clamp(1.1rem, 2vw, 1.6rem);
-  font-weight: 450;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-weight: 550;
 
   line-height: 1.55;
+  letter-spacing: -0.035em;
+}
+
+.intro-note {
+  margin-top: 20px;
+
+  color: var(--muted);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 
-.hero-bottom span {
-  color: var(--muted);
+/* 화면에는 안 보이지만 접근성을 위한 h1 */
+.sr-only {
+  position: absolute;
 
-  font-size: 0.8rem;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+  border: 0;
 }
 
 
